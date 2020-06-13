@@ -10,7 +10,7 @@ public static class Noise
         float maxHeight = 0;        //altezza massima raggiungibile
         float amplitude = 1;        //amplitudine
         float frequency = 1;        //frequenza
-        float noiseHeight = 0;      //altezza del rumore
+        float noiseHeight = 0;      //altezza del rumore 
 
         float[,] noiseMap = new float[mapWidth, mapHeight];         //height map
 
