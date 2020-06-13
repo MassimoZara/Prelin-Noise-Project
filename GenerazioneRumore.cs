@@ -54,7 +54,7 @@ public static class Noise
                     float coordX = (x - halfWidth + octOffs[i].x)  / scale * frequency ;
                     float coordY = (y - halfHeight + octOffs[i].y)  / scale * frequency ;
 
-                    float perlinValue = Mathf.PerlinNoise(coordX, coordY) * 2 - 1;
+                    float perlinValue = Mathf.PerlinNoise(coordX, coordY) * 2 - 1;          //passo i valori alla funizone di Perlin implementata su Unity
                     noiseHeight += perlinValue * amplitude;
 
                     amplitude = amplitude * persistance;
