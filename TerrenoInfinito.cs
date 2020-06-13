@@ -22,7 +22,7 @@ public class EndlessTerrain : MonoBehaviour
 
 
     Dictionary<Vector2, TerrainChunk> terrainChunkDictionary = new Dictionary<Vector2, TerrainChunk>();         //dizionario dei chunck già caricati
-    static List<TerrainChunk> terrainChunksVisibleLastUpdate = new List<TerrainChunk>();
+    static List<TerrainChunk> terrainChunksVisibleLastUpdate = new List<TerrainChunk>();                        //Lista di Chunk visibili dall'ultimo update
 
     void Start()
     {
