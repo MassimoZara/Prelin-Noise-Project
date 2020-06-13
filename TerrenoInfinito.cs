@@ -47,7 +47,7 @@ public class EndlessTerrain : MonoBehaviour
         }
     }
 
-    void UpdateVisibleChunks()                          //
+    void UpdateVisibleChunks()                         
     {
 
         for (int i = 0; i < terrainChunksVisibleLastUpdate.Count; i++)
@@ -136,7 +136,7 @@ public class EndlessTerrain : MonoBehaviour
         {
             if (mapDataReceived)
             {
-                float viewerDstFromNearestEdge = Mathf.Sqrt(bounds.SqrDistance(viewerPosition));
+                float viewerDstFromNearestEdge = Mathf.Sqrt(bounds.SqrDistance(viewerPosition));        //calcolo la distanza dal bordo più vicino
                 bool visible = viewerDstFromNearestEdge <= maxViewDst;
 
                 if (visible)
